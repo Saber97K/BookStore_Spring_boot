@@ -14,7 +14,7 @@ import java.util.Optional;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
 
-    // ✅ 1. Method name-based query (Spring builds this automatically)
+    // ✅ 1. Method name-based query (Spring builds this automatically
     Optional<Book> findByTitle(String title);
 
     List<Book> findByAuthorAndPriceLessThan(String title, BigDecimal price);
